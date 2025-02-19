@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+}
+
+
+.about-section{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 12%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow:  0 5px 15px rgba(0,0,0,.1);
+}
+
+.about-left img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.about-right{
+    flex: 1;
+    margin-left: 50px;
+}
+
+.about-right h4{
+    color: #e74d06;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-right h1{
+    color: #333;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about-right p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.about-right ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.address .address-logo{
+    color: #e74d06;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.address .saprater{
+   margin-bottom: 20px;
+   margin-right: 15px;
+   margin-left: 15px;
+}
+
+@media(max-width: 1024px){
+    .about-section{
+        padding: 60px 8%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-left{
+        margin-bottom: 30px;
+    }
+    .about-right{
+        margin-left: 0;
+    }
+    .about-right h1{
+        font-size: 36px;
+    }
+    .about-right p{
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width:768px){
+    .about-left img{
+        max-width: 100%;
+        transform: translateY(0);
+    }
+
+    .about-right {
+        max-width: 100%;
+    }
+
+    .about-right h1{
+        font-size: 32px;
+    }
+    .about-right p{
+        font-size: 14px;
+    }
+    
+
+}
